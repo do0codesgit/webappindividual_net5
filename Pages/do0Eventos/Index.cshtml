@@ -1,0 +1,138 @@
+@page
+@model do0.Pages.do0Eventos.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].Rascunho)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].DataCadastro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].do0Avatar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].do0User)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].TipoEvento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].DataEvento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].DataNascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].NomeCompleto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].ResponsavelEvento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].NomeHomenageado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].CPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].Identidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].EnderecoCompleto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].Telefone2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].Telefone3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.do0Evento[0].Notas)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.do0Evento) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rascunho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCadastro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.do0Avatar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.do0User)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoEvento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataEvento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeCompleto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResponsavelEvento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeHomenageado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Identidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnderecoCompleto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notas)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.do0EventoId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.do0EventoId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.do0EventoId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

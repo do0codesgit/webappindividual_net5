@@ -1,0 +1,120 @@
+@page
+@model do0.Pages.do0Eventos.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>do0Evento</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="do0Evento.do0EventoId" />
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="do0Evento.Rascunho" /> @Html.DisplayNameFor(model => model.do0Evento.Rascunho)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.DataCadastro" class="control-label"></label>
+                <input asp-for="do0Evento.DataCadastro" class="form-control" />
+                <span asp-validation-for="do0Evento.DataCadastro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.do0Avatar" class="control-label"></label>
+                <input asp-for="do0Evento.do0Avatar" class="form-control" />
+                <span asp-validation-for="do0Evento.do0Avatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.do0User" class="control-label"></label>
+                <input asp-for="do0Evento.do0User" class="form-control" />
+                <span asp-validation-for="do0Evento.do0User" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.TipoEvento" class="control-label"></label>
+                <input asp-for="do0Evento.TipoEvento" class="form-control" />
+                <span asp-validation-for="do0Evento.TipoEvento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.DataEvento" class="control-label"></label>
+                <input asp-for="do0Evento.DataEvento" class="form-control" />
+                <span asp-validation-for="do0Evento.DataEvento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.DataNascimento" class="control-label"></label>
+                <input asp-for="do0Evento.DataNascimento" class="form-control" />
+                <span asp-validation-for="do0Evento.DataNascimento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.NomeCompleto" class="control-label"></label>
+                <input asp-for="do0Evento.NomeCompleto" class="form-control" />
+                <span asp-validation-for="do0Evento.NomeCompleto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.ResponsavelEvento" class="control-label"></label>
+                <input asp-for="do0Evento.ResponsavelEvento" class="form-control" />
+                <span asp-validation-for="do0Evento.ResponsavelEvento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.NomeHomenageado" class="control-label"></label>
+                <input asp-for="do0Evento.NomeHomenageado" class="form-control" />
+                <span asp-validation-for="do0Evento.NomeHomenageado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.CPF" class="control-label"></label>
+                <input asp-for="do0Evento.CPF" class="form-control" />
+                <span asp-validation-for="do0Evento.CPF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.Identidade" class="control-label"></label>
+                <input asp-for="do0Evento.Identidade" class="form-control" />
+                <span asp-validation-for="do0Evento.Identidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.EnderecoCompleto" class="control-label"></label>
+                <input asp-for="do0Evento.EnderecoCompleto" class="form-control" />
+                <span asp-validation-for="do0Evento.EnderecoCompleto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.Email" class="control-label"></label>
+                <input asp-for="do0Evento.Email" class="form-control" />
+                <span asp-validation-for="do0Evento.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.Telefone" class="control-label"></label>
+                <input asp-for="do0Evento.Telefone" class="form-control" />
+                <span asp-validation-for="do0Evento.Telefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.Telefone2" class="control-label"></label>
+                <input asp-for="do0Evento.Telefone2" class="form-control" />
+                <span asp-validation-for="do0Evento.Telefone2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.Telefone3" class="control-label"></label>
+                <input asp-for="do0Evento.Telefone3" class="form-control" />
+                <span asp-validation-for="do0Evento.Telefone3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="do0Evento.Notas" class="control-label"></label>
+                <input asp-for="do0Evento.Notas" class="form-control" />
+                <span asp-validation-for="do0Evento.Notas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
