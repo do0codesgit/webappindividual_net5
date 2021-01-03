@@ -1,0 +1,130 @@
+@page
+@model do0.Pages.do0Eventos.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>do0Evento</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.Rascunho)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.Rascunho)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.DataCadastro)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.DataCadastro)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.do0Avatar)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.do0Avatar)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.do0User)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.do0User)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.TipoEvento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.TipoEvento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.DataEvento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.DataEvento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.DataNascimento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.DataNascimento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.NomeCompleto)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.NomeCompleto)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.ResponsavelEvento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.ResponsavelEvento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.NomeHomenageado)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.NomeHomenageado)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.CPF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.CPF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.Identidade)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.Identidade)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.EnderecoCompleto)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.EnderecoCompleto)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.Telefone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.Telefone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.Telefone2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.Telefone2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.Telefone3)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.Telefone3)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.do0Evento.Notas)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.do0Evento.Notas)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="do0Evento.do0EventoId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
