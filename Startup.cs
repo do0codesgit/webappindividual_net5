@@ -33,6 +33,10 @@ namespace do0
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddDbContext<do0EventoContext>(options =>
+            options.UseSqlite(Configuration.GetConnectionString("do0EventoContext")));
+
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
